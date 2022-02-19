@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include permit_management *.css
+recursive-include permit_management *.csv
+recursive-include permit_management *.html
+recursive-include permit_management *.ico
+recursive-include permit_management *.js
+recursive-include permit_management *.json
+recursive-include permit_management *.md
+recursive-include permit_management *.png
+recursive-include permit_management *.py
+recursive-include permit_management *.svg
+recursive-include permit_management *.txt
+recursive-exclude permit_management *.pyc
