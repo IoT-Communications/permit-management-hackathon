@@ -42,7 +42,7 @@ Next, change the directory to ***permits*** and download the Permit Management a
 ```bench
 cd permits
 
-bench get-app permit_management {{ source_link }}
+bench get-app permit_management https://github.com/IoT-Communications/permit-management-hackathon.git
 ```
 
 Create a new site to install the app by running the command:
