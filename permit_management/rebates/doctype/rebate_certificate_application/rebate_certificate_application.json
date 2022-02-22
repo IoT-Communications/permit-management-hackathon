@@ -1,0 +1,362 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-02-21 12:11:23.200391",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "applicant_section",
+  "first_name",
+  "physical_address",
+  "email",
+  "vat_registration",
+  "column_break_7",
+  "surname",
+  "full_name",
+  "postal_address",
+  "contact_number",
+  "trading_licence",
+  "manufacturer_section",
+  "company_name",
+  "company_physical_address",
+  "company_registration_number",
+  "company_trading_licence",
+  "column_break_19",
+  "company_email",
+  "company_postal_address",
+  "tin_vat_registration",
+  "permit_type_section",
+  "rebate_certificate_type",
+  "column_break_28",
+  "application_fee",
+  "permit_request_section",
+  "details_of_rebate_request",
+  "declaration_section",
+  "declaration",
+  "undertaking",
+  "payment_gateway_details",
+  "payment_gateway",
+  "currency",
+  "payment_url",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "RCA-.MM.-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Application Number",
+   "options": "RCA-.MM.-.YYYY.-.#####",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Application Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "applicant_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Applicant (Sole Proprietor)"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Data",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "vat_registration",
+   "fieldtype": "Data",
+   "label": "VAT Registration No."
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "label": "Surname"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "postal_address",
+   "fieldtype": "Data",
+   "label": "Postal Address"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "trading_licence",
+   "fieldtype": "Attach",
+   "label": "Trading Licence"
+  },
+  {
+   "fieldname": "manufacturer_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Manufacturer/Trader (Other Forms of Business)"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "company_physical_address",
+   "fieldtype": "Data",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "company_registration_number",
+   "fieldtype": "Data",
+   "label": "Company Registration Number"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "company_postal_address",
+   "fieldtype": "Data",
+   "label": "Postal Address"
+  },
+  {
+   "fieldname": "tin_vat_registration",
+   "fieldtype": "Data",
+   "label": "TIN/VAT Registration Number"
+  },
+  {
+   "fieldname": "company_trading_licence",
+   "fieldtype": "Attach",
+   "label": "Trading Licence"
+  },
+  {
+   "fieldname": "permit_type_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Permit"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "rebate_certificate_type.application_fee",
+   "fieldname": "application_fee",
+   "fieldtype": "Currency",
+   "label": "Application Fee"
+  },
+  {
+   "fieldname": "permit_request_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Permit Request"
+  },
+  {
+   "fieldname": "declaration_section",
+   "fieldtype": "Section Break",
+   "label": "Declaration"
+  },
+  {
+   "default": "0",
+   "fieldname": "declaration",
+   "fieldtype": "Check",
+   "label": "I certify that the information furnished in this application is correct"
+  },
+  {
+   "default": "0",
+   "fieldname": "undertaking",
+   "fieldtype": "Check",
+   "label": "I undertake to comply with the conditions set out in the permit once issued to me"
+  },
+  {
+   "fieldname": "payment_gateway_details",
+   "fieldtype": "Section Break",
+   "label": "Payment Gateway Details"
+  },
+  {
+   "default": "Stripe-IoT Communications",
+   "fieldname": "payment_gateway",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Payment Gateway",
+   "options": "Payment Gateway",
+   "read_only": 1
+  },
+  {
+   "default": "BWP",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_url",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Payment Url",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rebate Certificate Application",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rebate Certificate Application",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rebate_certificate_type",
+   "fieldtype": "Link",
+   "label": "Rebate Certificate Type",
+   "options": "Rebate Category"
+  },
+  {
+   "fieldname": "details_of_rebate_request",
+   "fieldtype": "Table",
+   "label": "Details of Rebate Request",
+   "options": "Details of Rebate Request"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-02-22 01:36:57.974994",
+ "modified_by": "Administrator",
+ "module": "Rebates",
+ "name": "Rebate Certificate Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "BOTC Authorising Officer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "BOTC Issuing Officer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "BOTC Applicant",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

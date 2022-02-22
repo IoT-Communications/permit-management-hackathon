@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2022-02-21 13:15:23.515980",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Rebate Certificate Application",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Good day,\n\n<br><br>\n\nApplication {{ doc.name }} is pending compliance check.\n\n<br><br>\n\nRegards,\n\n<br><br>",
+ "modified": "2022-02-21 13:15:23.515980",
+ "modified_by": "Administrator",
+ "module": "Rebates",
+ "name": "Rebates - Submit for Compliance Check",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state == 'Pending Compliance Check'",
+   "receiver_by_role": "BOTC Issuing Officer"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Admin",
+ "sender_email": "admin@iotcomms.co.bw",
+ "subject": "{{ doc.name }} {{ doc.workflow_state }}",
+ "value_changed": "workflow_state"
+}

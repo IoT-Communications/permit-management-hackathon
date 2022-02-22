@@ -1,0 +1,44 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "Daily Import Permit Applications"
+  }
+ ],
+ "charts_label": "Imports Chart",
+ "creation": "2022-02-19 14:57:21.344002",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "buying",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Imports",
+ "links": [],
+ "modified": "2022-02-21 19:46:28.195479",
+ "modified_by": "Administrator",
+ "module": "Imports",
+ "name": "Imports",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Import Permit Category List",
+   "link_to": "Import Permit Category",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Import Permit Application",
+   "link_to": "Import Permit Application",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Import Transactions"
+}

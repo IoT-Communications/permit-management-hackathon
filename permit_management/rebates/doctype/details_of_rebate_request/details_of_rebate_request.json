@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-21 12:21:19.435020",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_description",
+  "tariff_heading",
+  "customs_value",
+  "quantity",
+  "country_importing_from",
+  "bill_of_lading"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "tariff_heading",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HS Code"
+  },
+  {
+   "fieldname": "customs_value",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Customs Value"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity (kg/units)"
+  },
+  {
+   "fieldname": "country_importing_from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country Importing From"
+  },
+  {
+   "fieldname": "bill_of_lading",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bill of Lading"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-21 12:21:19.435020",
+ "modified_by": "Administrator",
+ "module": "Rebates",
+ "name": "Details of Rebate Request",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

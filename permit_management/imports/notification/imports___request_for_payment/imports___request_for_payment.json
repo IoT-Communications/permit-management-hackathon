@@ -1,0 +1,32 @@
+{
+ "attach_print": 1,
+ "channel": "Email",
+ "creation": "2022-02-19 20:58:00.047270",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Import Permit Application",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Good day,\n\n<br><br>\n\nApplication {{ doc.name }} is ready for payment.\n\n<br><br>\n\nRegards,",
+ "modified": "2022-02-21 11:29:48.059012",
+ "modified_by": "Administrator",
+ "module": "Imports",
+ "name": "Imports - Request for Payment",
+ "owner": "Administrator",
+ "print_format": "Import Application Invoice",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state == 'Ready for Payment'",
+   "receiver_by_role": "BOTC Applicant"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Admin",
+ "sender_email": "admin@iotcomms.co.bw",
+ "subject": "{{ doc.name }} {{ doc.workflow_state }}",
+ "value_changed": "workflow_state"
+}

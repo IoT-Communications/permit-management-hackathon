@@ -1,0 +1,32 @@
+{
+ "attach_print": 1,
+ "channel": "Email",
+ "creation": "2022-02-21 10:20:33.851670",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Export Permit Application",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Good day,\n\n<br><br>\n\nApplication {{ doc.name }} is compliant and ready for payment of application fee.\n\n<br><br>\n\nRegards,",
+ "modified": "2022-02-21 11:26:50.886745",
+ "modified_by": "Administrator",
+ "module": "Exports",
+ "name": "Exports - Compliance",
+ "owner": "Administrator",
+ "print_format": "Export Application Fee Invoice",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state == 'Compliant and Ready for Payment'",
+   "receiver_by_role": "BOTC Applicant"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Admin",
+ "sender_email": "admin@iotcomms.co.bw",
+ "subject": "{{ doc.name }} {{ doc.workflow_state }}",
+ "value_changed": "workflow_state"
+}

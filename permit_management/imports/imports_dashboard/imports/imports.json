@@ -1,0 +1,44 @@
+{
+ "cards": [
+  {
+   "card": "Pending Compliance Check"
+  },
+  {
+   "card": "Compliant"
+  },
+  {
+   "card": "Paid"
+  },
+  {
+   "card": "Approved"
+  },
+  {
+   "card": "Rejected"
+  },
+  {
+   "card": "Suspended"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Daily Permit Applications",
+   "width": "Half"
+  },
+  {
+   "chart": "Permits Applied For",
+   "width": "Half"
+  }
+ ],
+ "creation": "2022-02-21 16:22:38.170867",
+ "dashboard_name": "Imports",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2022-02-21 17:20:36.230386",
+ "modified_by": "Administrator",
+ "module": "Imports",
+ "name": "Imports",
+ "owner": "Administrator"
+}

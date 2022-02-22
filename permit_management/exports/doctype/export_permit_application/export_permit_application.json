@@ -1,0 +1,343 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-02-20 16:26:58.776973",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "company_section",
+  "company_name",
+  "tin_vat_registration",
+  "contact_number",
+  "physical_address",
+  "column_break_8",
+  "company_registration",
+  "scrap_dealer_license",
+  "contact_email",
+  "postal_address",
+  "permit_type_section",
+  "export_permit_type",
+  "licence_fee",
+  "column_break_23",
+  "application_fee",
+  "permit_request_section",
+  "inspection_location",
+  "exit_port",
+  "reg_no_truck",
+  "column_break_17",
+  "destination_of_scrap_metal",
+  "export_date",
+  "scrap_metal_list_section",
+  "scrap_metal_list",
+  "declaration_section",
+  "declaration",
+  "undertaking",
+  "payment_gateway_details",
+  "payment_gateway",
+  "currency",
+  "app_payment_url",
+  "licence_payment_url",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "EPA-.MM.-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Application Number",
+   "options": "EPA-.MM.-.YYYY.-.#####",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Application Date"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "scrap_dealer_license",
+   "fieldtype": "Data",
+   "label": "Scrap Dealer License Number"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Int",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "inspection_location",
+   "fieldtype": "Data",
+   "label": "Inspection Location"
+  },
+  {
+   "fieldname": "export_date",
+   "fieldtype": "Date",
+   "label": "Date of Export"
+  },
+  {
+   "fieldname": "exit_port",
+   "fieldtype": "Data",
+   "label": "Port of Exit"
+  },
+  {
+   "fieldname": "reg_no_truck",
+   "fieldtype": "Data",
+   "label": "Registration Number of Truck/Trailer"
+  },
+  {
+   "fieldname": "destination_of_scrap_metal",
+   "fieldtype": "Data",
+   "label": "Destination Of Scrap Metal"
+  },
+  {
+   "fieldname": "permit_type_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Permit"
+  },
+  {
+   "fieldname": "export_permit_type",
+   "fieldtype": "Link",
+   "label": "Export Permit Type",
+   "options": "Export Category"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Export Permit Application",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "company_registration",
+   "fieldtype": "Data",
+   "label": "Company Registration Number"
+  },
+  {
+   "fieldname": "tin_vat_registration",
+   "fieldtype": "Data",
+   "label": "TIN/VAT Registration Number"
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Data",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "postal_address",
+   "fieldtype": "Data",
+   "label": "Postal Address"
+  },
+  {
+   "fieldname": "company_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "permit_request_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Permit Request"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "export_permit_type.application_fee",
+   "fieldname": "application_fee",
+   "fieldtype": "Currency",
+   "label": "Application Fee"
+  },
+  {
+   "fetch_from": "export_permit_type.licence_fee",
+   "fieldname": "licence_fee",
+   "fieldtype": "Currency",
+   "label": "Licence Fee"
+  },
+  {
+   "fieldname": "scrap_metal_list",
+   "fieldtype": "Table",
+   "options": "Scrap Metal Table"
+  },
+  {
+   "fieldname": "scrap_metal_list_section",
+   "fieldtype": "Section Break",
+   "label": "Scrap Metal List"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "declaration",
+   "fieldtype": "Check",
+   "label": "I certify that the information furnished in this application is correct"
+  },
+  {
+   "default": "0",
+   "fieldname": "undertaking",
+   "fieldtype": "Check",
+   "label": "I undertake to comply with the conditions set out in the permit once issued to me"
+  },
+  {
+   "fieldname": "declaration_section",
+   "fieldtype": "Section Break",
+   "label": "Declaration"
+  },
+  {
+   "fieldname": "payment_gateway_details",
+   "fieldtype": "Section Break",
+   "label": "Payment Gateway Details"
+  },
+  {
+   "default": "Stripe-IoT Communications",
+   "fieldname": "payment_gateway",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Payment Gateway",
+   "options": "Payment Gateway",
+   "read_only": 1
+  },
+  {
+   "default": "BWP",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "app_payment_url",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Application Fee Payment Url",
+   "read_only": 1
+  },
+  {
+   "fieldname": "licence_payment_url",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "LIcence Fee Payment Url",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-02-22 01:36:24.063857",
+ "modified_by": "Administrator",
+ "module": "Exports",
+ "name": "Export Permit Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "BOTC Authorising Officer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "BOTC Issuing Officer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "BOTC Applicant",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

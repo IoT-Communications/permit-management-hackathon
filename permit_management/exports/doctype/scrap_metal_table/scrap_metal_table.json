@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-20 18:48:47.276615",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description_of_goods",
+  "tariff_number",
+  "quantity_tonnes",
+  "value_bwp",
+  "to_be_exported_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "description_of_goods",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Description of Goods",
+   "options": "Scrap Metal"
+  },
+  {
+   "fetch_from": "description_of_goods.tariff_number",
+   "fieldname": "tariff_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tariff Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quantity_tonnes",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity (tonnes)"
+  },
+  {
+   "fieldname": "value_bwp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Value (BWP)"
+  },
+  {
+   "fieldname": "to_be_exported_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To be Exported to"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-20 19:12:10.163584",
+ "modified_by": "Administrator",
+ "module": "Exports",
+ "name": "Scrap Metal Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

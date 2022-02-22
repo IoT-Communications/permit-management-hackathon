@@ -1,0 +1,44 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "Daily Rebate Certificate Applications"
+  }
+ ],
+ "charts_label": "Rebates Chart",
+ "creation": "2022-02-19 14:58:11.621310",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "loan",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Rebates",
+ "links": [],
+ "modified": "2022-02-21 19:46:16.301225",
+ "modified_by": "Administrator",
+ "module": "Rebates",
+ "name": "Rebates",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Rebate Certificate Category List",
+   "link_to": "Rebate Category",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Rebate Certificate Application",
+   "link_to": "Rebate Certificate Application",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Rebate Transactions"
+}

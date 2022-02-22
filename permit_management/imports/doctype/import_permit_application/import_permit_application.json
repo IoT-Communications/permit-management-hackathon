@@ -1,0 +1,351 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-02-19 15:35:58.381308",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "applicant_section",
+  "first_name",
+  "physical_address",
+  "email",
+  "vat_registration",
+  "column_break_7",
+  "surname",
+  "full_name",
+  "postal_address",
+  "contact_number",
+  "trading_licence",
+  "manufacturer_section",
+  "company_name",
+  "company_physical_address",
+  "company_registration_number",
+  "purpose_for_which_goods_are_required",
+  "column_break_19",
+  "company_email",
+  "company_postal_address",
+  "tin_vat_registration",
+  "company_trading_licence",
+  "bill_of_lading",
+  "permit_type_section",
+  "import_permit_type",
+  "column_break_28",
+  "application_fee",
+  "permit_request_section",
+  "details_of_permit_request",
+  "declaration_section",
+  "declaration",
+  "undertaking",
+  "payment_gateway_details",
+  "payment_gateway",
+  "currency",
+  "payment_url",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "applicant_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Applicant (Sole Proprietor)"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "label": "Surname"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trading_licence",
+   "fieldtype": "Attach",
+   "label": "Trading Licence"
+  },
+  {
+   "fieldname": "vat_registration",
+   "fieldtype": "Data",
+   "label": "VAT Registration No."
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Data",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "postal_address",
+   "fieldtype": "Data",
+   "label": "Postal Address"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "manufacturer_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Manufacturer/Trader (Other Forms of Business)"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "company_registration_number",
+   "fieldtype": "Data",
+   "label": "Company Registration Number"
+  },
+  {
+   "fieldname": "company_trading_licence",
+   "fieldtype": "Attach",
+   "label": "Trading Licence"
+  },
+  {
+   "fieldname": "tin_vat_registration",
+   "fieldtype": "Data",
+   "label": "TIN/VAT Registration Number"
+  },
+  {
+   "fieldname": "company_physical_address",
+   "fieldtype": "Data",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "company_postal_address",
+   "fieldtype": "Data",
+   "label": "Postal Address"
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "bill_of_lading",
+   "fieldtype": "Attach",
+   "label": "Bill of Lading"
+  },
+  {
+   "fieldname": "purpose_for_which_goods_are_required",
+   "fieldtype": "Text",
+   "label": "Purpose for which goods are required"
+  },
+  {
+   "fieldname": "permit_request_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Permit Request"
+  },
+  {
+   "fieldname": "details_of_permit_request",
+   "fieldtype": "Table",
+   "label": "Details of Permit Request",
+   "options": "Details of Permit Request"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Import Permit Application",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Application Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "declaration",
+   "fieldtype": "Check",
+   "label": "I certify that the information furnished in this application is correct"
+  },
+  {
+   "default": "0",
+   "fieldname": "undertaking",
+   "fieldtype": "Check",
+   "label": "I undertake to comply with the conditions set out in the permit once issued to me"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "IPA-.MM.-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Application Number",
+   "options": "IPA-.MM.-.YYYY.-.#####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "permit_type_section",
+   "fieldtype": "Section Break",
+   "label": "Type of Permit"
+  },
+  {
+   "fieldname": "import_permit_type",
+   "fieldtype": "Link",
+   "label": "Import Permit Type",
+   "options": "Import Permit Category"
+  },
+  {
+   "fetch_from": "import_permit_type.app_fee",
+   "fieldname": "application_fee",
+   "fieldtype": "Currency",
+   "label": "Application Fee"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_gateway_details",
+   "fieldtype": "Section Break",
+   "label": "Payment Gateway Details"
+  },
+  {
+   "default": "Stripe-IoT Communications",
+   "fieldname": "payment_gateway",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Payment Gateway",
+   "options": "Payment Gateway",
+   "read_only": 1
+  },
+  {
+   "default": "BWP",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_url",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Payment Url",
+   "read_only": 1
+  },
+  {
+   "fieldname": "declaration_section",
+   "fieldtype": "Section Break",
+   "label": "Declaration"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-02-22 01:35:41.691761",
+ "modified_by": "Administrator",
+ "module": "Imports",
+ "name": "Import Permit Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "BOTC Authorising Officer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "BOTC Issuing Officer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "BOTC Applicant",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

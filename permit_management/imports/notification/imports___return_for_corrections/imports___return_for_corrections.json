@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2022-02-19 20:28:22.942711",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Import Permit Application",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Good day,\n\n<br><br>\n\nApplication {{ doc.name }} is returned for corrections.\n\n<br><br>\n\nRegards,\n\n<br>",
+ "modified": "2022-02-19 20:43:17.458773",
+ "modified_by": "Administrator",
+ "module": "Imports",
+ "name": "Imports - Return for Corrections",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state == 'Draft'",
+   "receiver_by_role": "BOTC Applicant"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Admin",
+ "sender_email": "admin@iotcomms.co.bw",
+ "subject": "{{ doc.name }} {{ doc.workflow_state }}",
+ "value_changed": "workflow_state"
+}

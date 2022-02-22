@@ -1,0 +1,44 @@
+{
+ "cards": [
+  {
+   "card": "Rebates - Pending Compliance Check"
+  },
+  {
+   "card": "Rebates - Compliant"
+  },
+  {
+   "card": "Rebates - Paid"
+  },
+  {
+   "card": "Rebates - Approved"
+  },
+  {
+   "card": "Rebates - Rejected"
+  },
+  {
+   "card": "Rebates - Suspended"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Daily Rebate Certificate Applications",
+   "width": "Half"
+  },
+  {
+   "chart": "Rebate Certificates Applied For",
+   "width": "Half"
+  }
+ ],
+ "creation": "2022-02-21 19:41:36.544348",
+ "dashboard_name": "Rebates",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2022-02-21 19:41:36.544348",
+ "modified_by": "Administrator",
+ "module": "Rebates",
+ "name": "Rebates",
+ "owner": "Administrator"
+}
